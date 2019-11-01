@@ -1,0 +1,94 @@
+@import './variables.module.css';
+
+.grid {
+  display: grid;
+  grid-gap: var(--grid-gap);
+  word-break: break-word;
+}
+
+.two {
+  composes: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.three {
+  composes: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.four {
+  composes: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.five {
+  composes: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.six {
+  composes: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.seven {
+  composes: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.eight {
+  composes: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.date_group {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+}
+
+.container {
+  max-width: var(--container);
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.container_small {
+  max-width: var(--container-small);
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.container_center {
+  composes: container;
+  max-width: var(--container-small);
+}
+
+@media (--desktop) {
+  .container,
+  .container_small {
+    padding: 2rem;
+  }
+}
+
+@media (--tablet) {
+  .five {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (--mobile) {
+  .three,
+  .four {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (--mobile-med) {
+  .two,
+  .three,
+  .four,
+  .five {
+    grid-template-columns: 1fr;
+  }
+}

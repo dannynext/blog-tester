@@ -1,0 +1,27 @@
+.meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+}
+
+.thumbnail {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  grid-row: 1 /3;
+  margin-right: 0.75rem;
+}
+
+.author {
+  font-size: 1rem;
+  font-weight: var(--font-med);
+  padding: 0;
+}
+
+.date {
+  color: var(--pitch-3);
+  padding: 0;
+  line-height: 1;
+}

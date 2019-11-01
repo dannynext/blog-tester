@@ -1,0 +1,36 @@
+.post {
+  background: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.meta {
+  padding: 1rem 1rem 0;
+}
+
+.title {
+  display: block;
+}
+
+.title a {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  display: block;
+  font-weight: var(--font-med);
+  margin: 0;
+  padding: 0;
+}
+
+.label {
+  font-variant-caps: all-small-caps;
+  margin-right: 1rem;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.cta {
+  display: block;
+  margin: 1rem 0;
+  font-weight: var(--font-med);
+}

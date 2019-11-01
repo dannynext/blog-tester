@@ -1,0 +1,21 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.main {
+  margin-top: 0;
+  margin-bottom: auto;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.no_padding {
+  /* prevnt lint error */
+}
+
+.main.no_padding {
+  padding: 0;
+}

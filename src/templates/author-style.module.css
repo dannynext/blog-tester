@@ -1,0 +1,10 @@
+@import 'src/css/variables.module.css';
+@import 'src/css/type.module.css';
+
+.author {
+  background-color: var(--author-background);
+}
+
+.name {
+  font-weight: var(--font-bold);
+}

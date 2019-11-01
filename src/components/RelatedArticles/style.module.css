@@ -1,0 +1,6 @@
+@import 'src/css/grid.module.css';
+
+.blog_roll {
+  composes: three;
+  margin: 0 0 4rem 0;
+}

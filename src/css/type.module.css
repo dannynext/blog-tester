@@ -1,0 +1,192 @@
+/* Averta Light */
+@font-face {
+  font-family: Averta;
+  src: url('../fonts/eot/hinted-Averta-Light.eot');
+  src:
+    url('../fonts/eot/hinted-Averta-Light.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/woff2/Averta Light.woff2') format('woff2'),
+    url('../fonts/woff/hinted-Averta-Light.woff')
+    format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Averta Regular */
+@font-face {
+  font-family: Averta;
+  src: url('../fonts/eot/hinted-Averta-Regular.eot');
+  src:
+    url('../fonts/eot/hinted-Averta-Regular.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/woff2/Averta Regular.woff2')
+    format('woff2'),
+    url('../fonts/woff/hinted-Averta-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Averta Semibold */
+@font-face {
+  font-family: Averta;
+  src: url('../fonts/eot/hinted-Averta-Semibold.eot');
+  src:
+    url('../fonts/eot/hinted-Averta-Semibold.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/woff2/Averta Semibold.woff2')
+    format('woff2'),
+    url('../fonts/woff/hinted-Averta-Semibold.woff')
+    format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Averta Extra Bold */
+@font-face {
+  font-family: Averta;
+  src: url('../fonts/eot/hinted-Averta-Extrabold.eot');
+  src:
+    url('../fonts/eot/hinted-Averta-Extrabold.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/woff2/Averta Extra Bold.woff2')
+    format('woff2'),
+    url('../fonts/woff/hinted-Averta-Extrabold.woff')
+    format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-family: 'Averta', 'sans-serif';
+  --font-light: 300;
+  --font-reg: 400;
+  --font-med: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-spacing: 0.025em;
+  --line-height: 1.6em;
+  --font-size-lrg: 1rem;
+  --font-size-reg: 0.875rem;
+  --font-size-sml: 0.75rem;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+label,
+select,
+button {
+  font-family: var(--font-family);
+  letter-spacing: var(--font-spacing);
+  line-height: var(--line-height);
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-med);
+}
+
+p {
+  font-family: var(--font-family);
+  font-weight: var(--font-reg);
+}
+
+a {
+  font-weight: var(--font-reg);
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: var(--font-bold);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p,
+a {
+  font-size: 0.875rem;
+}
+
+label {
+  font-size: 0.875rem;
+}
+
+@media (--mobile-small) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+li {
+  margin: 1rem 0;
+}

@@ -1,0 +1,97 @@
+:root {
+  /* Design System Colors */
+  --blue-1: #0C5FE9;
+  --blue-2: #3E83F5;
+  --blue-3: #77A8F8;
+  --blue-4: #C5DAFC;
+  --blue-5: #ECF3FE;
+  --pitch-1: #1A1E23;
+  --pitch-2: #333C46;
+  --pitch-3: #96A4B2;
+  --pitch-4: #DCE1E5;
+  --pitch-5: #F3F5F6;
+  --green-1: #29A389;
+  --green-2: #59C5AE;
+  --green-3: #95DACB;
+  --green-4: #D2EFE9;
+  --green-5: #F0FAF8;
+  --red-1: #CA021A;
+  --red-2: #FD213B;
+  --red-3: #FE7282;
+  --red-4: #FEC2CA;
+  --red-5: #FFEBED;
+  --yellow-1: #E3C012;
+  --yellow-2: #F2D755;
+  --yellow-3: #F5E07B;
+  --yellow-4: #FBF2C6;
+  --yellow-5: #FEFBEC;
+
+  /* colors */
+  --bg-light: #F7FBFD;
+  --border: var(--pitch-4);
+  --text-color: var(--pitch-2);
+  --modal-text: color-mod(var(--pitch-2) l(25%));
+  --author-background: var(--pitch-4);
+
+  /* ??? */
+  --sidebar: 15rem;
+  --shadow: 0 0 1rem 0 #DDD;
+
+  /* container for setting consistent page width */
+  --container-small: 48rem;
+  --container: 1440px;
+  --container-padding: 1rem;
+
+  /* header / footer heights */
+  --header-height: 4.5rem;
+  --footer-height: 3.5rem;
+
+  /* lane history sidebar width */
+  --lane-sidebar: 16rem;
+
+  /* transition */
+  --duration: 0.3s;
+  --duration-short: 0.15s;
+  --cubic: cubic-bezier(0.42, 0, 0.58, 1);
+
+  /* z-index vars */
+  --z-index-neg: -1;
+  --z-index-background: 0;
+  --z-index-content: 100;
+  --z-index-expand-ad: 200;
+  --z-index-float-ad: 300;
+  --z-index-popup: 400;
+  --z-index-floating: 500;
+  --z-index-nav: 600;
+  --z-index-overlay: 700;
+
+  /* grid */
+  --grid-gap: 2rem;
+}
+
+@custom-media --widescreen screen and (width > 1440px);
+@custom-media --desktop screen and (width <= 1440px);
+@custom-media --desktop-sm screen and (width < 1200px);
+@custom-media --tablet screen and (width < 1024px);
+@custom-media --mobile screen and (width < 768px);
+@custom-media --mobile-med screen and (width < 560px);
+@custom-media --mobile-sml screen and (width <= 375px);
+@custom-media --mobile-xs screen and (width < 321px);
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.divider {
+  width: 100%;
+  border-top: 1px var(--pitch-3) solid;
+  margin: 1.5rem 0;
+}

@@ -1,0 +1,86 @@
+@import 'src/css/grid.module.css';
+
+.header {
+  background: var(--pitch-3);
+  background-position: center;
+}
+
+.content_wrapper {
+  padding-top: 25vh;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(2, 22, 53, 0.769)
+    );
+}
+
+.content {
+  composes: container_small;
+  color: white;
+}
+
+.title {
+  max-width: 40rem;
+  margin-bottom: 1rem;
+}
+
+.meta_container {
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail_link {
+  padding: 0;
+  margin-right: 0.5rem;
+}
+
+.thumbnail {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+
+.meta {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  font-weight: var(--font-med);
+  padding: 0;
+  margin: 0 2rem 0 0;
+  align-self: center;
+  line-height: 1;
+}
+
+@media (--desktop) {
+  .content {
+    padding: 2rem 0;
+  }
+}
+
+@media (--tablet) {
+  .content_wrapper {
+    padding-top: 15vh;
+  }
+}
+
+@media (--mobile) {
+  .content_wrapper {
+    padding-top: 12vh;
+  }
+
+  .content {
+    padding: 2rem;
+  }
+}
+
+@media (--mobile-sml) {
+  .content_wrapper {
+    padding: 0;
+  }
+}

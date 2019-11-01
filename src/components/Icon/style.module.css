@@ -1,0 +1,21 @@
+@import 'src/css/variables.module.css';
+
+.icon,
+.icon svg {
+  height: 1rem;
+  width: auto;
+}
+
+.large,
+.large svg {
+  height: 1.5rem;
+}
+
+.icon svg {
+  color: var(--pitch-2);
+  fill: currentColor;
+}
+
+.link {
+  margin-right: 0.75rem;
+}

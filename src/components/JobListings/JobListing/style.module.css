@@ -1,0 +1,25 @@
+.listing {
+  margin: 1rem 0;
+}
+
+.title {
+  display: block;
+  padding: 0;
+  line-height: 1.125;
+}
+
+.title a {
+  font-weight: var(--font-med);
+  transition: all var(--duration-short) var(--cubic);
+}
+
+.title a:hover,
+.title a:focus {
+  color: var(--blue-2);
+}
+
+.location {
+  display: block;
+  font-size: var(--font-size-sml);
+  padding: 0;
+}

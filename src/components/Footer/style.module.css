@@ -1,0 +1,34 @@
+@import 'src/css/variables.module.css';
+@import 'src/css/grid.module.css';
+
+.footer {
+  background: var(--pitch-1);
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer_container {
+  composes: four;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bottom {
+  composes: grid;
+  grid-template-columns: 1fr auto auto;
+  max-width: var(--container);
+  padding: 0 2rem;
+  margin: 2rem auto 0;
+}
+
+@media (--mobile-med) {
+  .footer_container {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+}

@@ -1,0 +1,37 @@
+.wrapper {
+  background: white;
+  border: 1px solid var(--pitch-4);
+  padding: 1rem;
+}
+
+.title {
+  margin-bottom: -1rem;
+}
+
+.button {
+  padding: 0.5rem 0.75rem;
+  background: var(--blue-2);
+  color: white;
+  font-weight: var(--font-med);
+  margin: 1rem 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  border-radius: 0.1875rem;
+  transition: all var(--duration-short) var(--cubic);
+}
+
+.button:focus {
+  outline: 0;
+  border-color: var(--blue-3);
+  box-shadow: 0 0 0 2px var(--blue-4);
+}
+
+.button:active {
+  background: var(--blue-1);
+  border-color: var(--blue-3);
+}
+
+.loading {
+  display: block;
+  margin: 1rem 0 12rem;
+}
