@@ -1,17 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { AuthorIntro } from 'src/templates/author'
+import AuthorInfo from 'src/components/AuthorInfo'
 
 export default function AuthorPagePreview({ entry }) {
   const data = entry.getIn(['data']).toJS()
   if (data) {
+    const author = {
+      ...data,
+      thumbnail: data.thumbnail || {
+        publicURL: ''
+      }
+    }
+
     return (
-      <AuthorIntro
-        title={data.title}
-        description={data.description}
-        github={data.github}
-        twitter={data.twitter}
-        thumbnail={data.thumbnail}
+      <AuthorInfo
+        author={author}
       />
     )
   } else {

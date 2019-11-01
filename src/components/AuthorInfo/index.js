@@ -25,6 +25,8 @@ export default function AuthorInfo({ author, primary }) {
     github,
   } = author
 
+  console.log(Github)
+
   const wrapperClass = cn(
     style.wrapper,
     primary && style.primary
