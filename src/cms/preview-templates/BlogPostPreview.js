@@ -4,10 +4,15 @@ import { BlogPostTemplate } from 'src/templates/blog-post'
 
 const BlogPostPreview = ({ entry, widgetFor, fieldsMetaData }) => {
   const data = entry.getIn(['data']).toJS()
-  let author = {}
+  let author = {
+    thumbnail: {
+      publicURL: ''
+    }
+  }
+
   if (data.author) {
+    console.log('The author field meta data: ', fieldsMetaData.getIn(['author', data.author]))
     author = {
-      ...fieldsMetaData.getIn(['author', data.author]).toJS(),
       thumbnail: {
         publicURL: ''
       }
