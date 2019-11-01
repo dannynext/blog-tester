@@ -89,9 +89,3 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
-
-.divider {
-  width: 100%;
-  border-top: 1px var(--pitch-3) solid;
-  margin: 1.5rem 0;
-}
